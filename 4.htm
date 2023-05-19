@@ -1,0 +1,128 @@
+<div class='container'>
+  <div class='head'>
+    <div></div>
+    <div></div>
+  </div>
+  <div class='t tl'></div>
+  <div class='t tr'></div>
+  <div class='t bl'></div>
+  <div class='t br'></div>
+  <div class='teeth'></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    background: #000;
+
+  }
+
+  div {
+    background: #fff;
+  }
+
+  .container {
+    width: 210px;
+    height: 150px;
+    margin-top: 20;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .head {
+    width: 150;
+    height: 100;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5;
+  }
+
+  .head>div {
+    background: #000;
+    width: 40;
+    height: 50;
+    border-radius: 50%;
+    transform: rotate(60deg);
+  }
+
+  .head>div+div {
+    transform: rotate(-60deg);
+  }
+
+  .teeth,
+  .teeth::after,
+  .teeth::before {
+    content: "";
+    width: 15;
+    height: 20;
+    position: absolute;
+    background: #fff;
+  }
+
+  .teeth {
+    bottom: -5;
+  }
+
+  .teeth::after {
+    left: 20;
+  }
+
+  .teeth::before {
+    right: 20;
+  }
+
+  .t {
+    position: absolute;
+    width: 20;
+    height: 20;
+  }
+
+  .t::before {
+    content: "";
+    width: 25;
+    height: 25;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: -18;
+    left: 5;
+    box-shadow: -15px 0 #fff;
+  }
+
+  .tr {
+    top: 0;
+    right: 0;
+    transform: rotate(45deg) translateY(26px);
+  }
+
+  .tl {
+
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg) translateY(26px);
+  }
+
+  .br {
+
+    bottom: 0;
+    right: 0;
+    transform: rotate(135deg) translateY(26px);
+  }
+
+  .bl {
+    bottom: 0;
+    left: 0;
+    transform: rotate(225deg) translateY(26px);
+  }
+</style>

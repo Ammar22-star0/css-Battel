@@ -1,0 +1,47 @@
+<div class='container'>
+  
+  <div class='face'>
+    <div class='uphair'>
+    </div>    
+    <div class='uphair' style='left:-18;transform:rotate(-120deg)'>
+    </div>
+    </div>
+  </div>
+</div>
+<style>
+  *{
+    box-sizing:border-box;
+    padding:0
+  }
+  body{
+    display:flex;
+    place-items:center;
+    justify-content:center;
+  }
+  .container {
+    width: 120px;
+    height: 130px;
+    background: #dd6b4d;
+    position:relative;
+    display:flex;
+    justify-content:center;
+  }
+  .face {
+    position:absolute;
+    width:80;
+    height:60;
+    background:#FFDEB9;
+    border-radius:0 0 60px 60px;
+    bottom:0;
+  }
+  .uphair {
+    position:absolute;
+    height: 30px;
+    width: 60px;
+    border-radius: 45px 45px 0 0;
+    background-color: #EBAE11;
+    top:-20;
+    right:-18;
+    transform:rotate(120deg);
+  }
+</style>

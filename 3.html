@@ -1,0 +1,44 @@
+<div class='container'>
+<div class='x1'></div>
+  <div class='x2'></div>
+  <div class='x3'></div>
+  </div>
+<style>
+  *{
+    box-sizing:border-box;
+    margin:0;
+  }
+  body{
+    background:#E3516E;
+    display:grid;
+    place-items:center;
+  }
+   .container{
+    width: 200px;
+    height: 200px;
+    background: #E3516E;
+    position:relative;
+  }
+  .x1{
+    width:100px;
+    height:100px;
+    background:#51B5A9;
+    position:absolute;
+    border-radius:100% 0 0 0;
+  }
+  .x2{
+    width:100px;
+    height:100px;
+    background:#FADE8B;
+    position:absolute;
+    border-radius:0 100% 0 0;
+    right:0;
+  }
+  .x3{
+    width:100px;
+    height:100px;
+    background:#F7F3D7;
+    position:absolute;
+    border-radius:0 0 0 100%;
+    bottom:0;
+  }
